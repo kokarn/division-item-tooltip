@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+
+    "name": "Division item tooltip",
+    "description": "This extension creates tooltips for items linked to kokarn.github.io/division-item-display/",
+    "version": "1.0",
+
+    "content_scripts": [
+        {
+            "matches": [ "http://*/*", "https://*/*" ],
+            "js": [ "tooltip.js" ]
+        }
+    ],
+
+    "permissions": [
+        "activeTab",
+        "https://kokarn.github.io/division-item-tooltip/"
+    ]
+}
